@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<!--
+	作者：10255656652@qq.com
+	时间：2018-05-12
+	描述：车子列表
+-->
+	<head>
+		<meta charset="UTF-8">
+		<title>CarRent </title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="../../static/css/font.css">
+		<link rel="stylesheet" href="../../static/css/weadmin.css">
+		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+		<!--[if lt IE 9]>
+	      <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+	      <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body>
+		<div class="weadmin-nav">
+			<span class="layui-breadcrumb">
+        <a href="">首页</a>
+        <a href="">车辆管理</a>
+        <a>
+          <cite>车辆列表</cite></a>
+      </span>
+			<a class="layui-btn layui-btn-sm" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新">
+				<i class="layui-icon" style="line-height:30px">&#x1002;</i></a>
+		</div>
+		<div class="weadmin-body">
+			<div class="layui-row">
+				<form class="layui-form layui-col-md12 we-search">
+					车辆搜索
+					<div class="layui-inline">
+						<input type="text" name="username" placeholder="请输入车辆编号" autocomplete="off" class="layui-input">
+					</div>
+					<button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+				</form>
+			</div>
+			<div class="weadmin-block">
+				<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+				<button class="layui-btn" onclick="WeAdminShow('添加用户','./add.html',600,400)"><i class="layui-icon"></i>添加</button>
+				<span class="fr" style="line-height:40px">共有数据：2 条</span>
+			</div>
+			<table class="layui-table" id="memberList">
+				<thead>
+					<tr>
+						<th>
+							<div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+						</th>
+						<th>车辆编号</th>
+						<th>车辆名</th>
+						<th>汽车牌照</th>
+						<th>颜色</th>
+						<th>型号</th>
+						<th>油量</th>
+						<th>行驶路程</th>
+						<th>已购年限</th>
+						<th>状态</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-id="1">
+						<td>
+							<div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id="1"><i class="layui-icon">&#xe605;</i></div>
+						</td>
+						<td>10010</td>
+						<td>朗逸</td>
+						<td>京C.B9557</td>
+						<td>黑</td>
+						<td>DSG30周年纪念版</td>
+						<td>15L</td>
+						<td>15000KM</td>
+						<td>3年</td>
+						<td class="td-status">
+							<span class="layui-btn layui-btn-normal layui-btn-xs">未借出</span></td>
+						<td class="td-manage">
+							<a onclick="member_stop(this,'10001')" href="javascript:;" title="启用">
+								<i class="layui-icon">&#xe601;</i>
+							</a>
+							<a title="编辑" onclick="WeAdminEdit('编辑','./edit.html', 1, 600, 400)" href="javascript:;">
+								<i class="layui-icon">&#xe642;</i>
+							</a>
+							<a onclick="WeAdminShow('修改信息','./password.html',600,400)" title="修改信息" href="javascript:;">
+								<i class="layui-icon">&#xe631;</i>
+							</a>
+							<a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+								<i class="layui-icon">&#xe640;</i>
+							</a>
+						</td>
+					</tr>
+					<tr data-id="2">
+						<td>
+							<div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+						</td>
+						<td>10010</td>
+						<td>奔驰</td>
+						<td>京D.9500B9447</td>
+						<td>黑</td>
+						<td>B200</td>
+						<td>26L</td>
+						<td>19225KM</td>
+						<td>2年</td>
+						<td class="td-status">
+							<span class="layui-btn layui-btn-normal layui-btn-xs">已借出</span></td>
+						<td class="td-manage">
+							<a onclick="member_stop(this,'10001')" href="javascript:;" title="启用">
+								<i class="layui-icon">&#xe601;</i>
+							</a>
+							<a title="编辑" onclick="WeAdminEdit('编辑','./edit.html', 2, 600, 400)" href="javascript:;">
+								<i class="layui-icon">&#xe642;</i>
+							</a>
+							<a onclick="WeAdminShow('修改信息','./password.html',600,400)" title="修改信息" href="javascript:;">
+								<i class="layui-icon">&#xe631;</i>
+							</a>
+							<a title="删除" onclick="member_del(this,'要删除的id')" href="javascript:;">
+								<i class="layui-icon">&#xe640;</i>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="page">
+				<div>
+					<a class="prev" href="">&lt;&lt;</a>
+					<span class="current">1</span>
+					<a class="num" href="">2</a>
+					<a class="next" href="">&gt;&gt;</a>
+				</div>
+			</div>
+		</div>
+		<!--<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
+		<script src="../../lib/layui/layui.js" charset="utf-8"></script>
+		<script src="../../static/js/eleDel.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

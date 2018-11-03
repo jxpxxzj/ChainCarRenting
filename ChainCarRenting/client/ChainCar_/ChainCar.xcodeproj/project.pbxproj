@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C6B575520A6049F00786C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B575420A6049F00786C7F /* Assets.xcassets */; };
+		2C6B575820A6049F00786C7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B575620A6049F00786C7F /* LaunchScreen.storyboard */; };
+		2C6B577220A6093200786C7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B576820A6093200786C7F /* main.m */; };
+		2C6B577320A6093200786C7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B576920A6093200786C7F /* AppDelegate.m */; };
+		2C6B578120A60B6900786C7F /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B578020A60B6900786C7F /* MainTabBarController.m */; };
+		2C6B578D20A6145A00786C7F /* MeSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B578C20A6145A00786C7F /* MeSplitController.m */; };
+		2C6B579120A614B300786C7F /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B578F20A614B300786C7F /* CarViewController.m */; };
+		2C6B579220A614B300786C7F /* CarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B579020A614B300786C7F /* CarViewController.xib */; };
+		2C6B579520A6186400786C7F /* MeInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B579420A6186400786C7F /* MeInfoController.m */; };
+		2C6B579B20A61D3500786C7F /* DetailInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B579920A61D3500786C7F /* DetailInfoController.m */; };
+		2C6B579C20A61D3500786C7F /* DetailInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B579A20A61D3500786C7F /* DetailInfoController.xib */; };
+		2CD8205320A693E7001D137F /* MeMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8205120A693E7001D137F /* MeMainCell.m */; };
+		2CD8205420A693E7001D137F /* MeMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8205220A693E7001D137F /* MeMainCell.xib */; };
+		2CD8205820A695A3001D137F /* MeCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8205620A695A3001D137F /* MeCarCell.m */; };
+		2CD8205920A695A3001D137F /* MeCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8205720A695A3001D137F /* MeCarCell.xib */; };
+		2CD8205B20A6A619001D137F /* Modals.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8205A20A6A619001D137F /* Modals.scnassets */; };
+		2CD8206220A6D367001D137F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8206120A6D367001D137F /* Car.m */; };
+		2CD8206620A6D7E3001D137F /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8206520A6D7E3001D137F /* Manager.m */; };
+		2CD8206A20A70054001D137F /* ChargeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8206820A70054001D137F /* ChargeController.m */; };
+		2CD8206B20A70054001D137F /* ChargeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8206920A70054001D137F /* ChargeController.xib */; };
+		2CD8209520A7598F001D137F /* SimpleCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8209420A7598F001D137F /* SimpleCar.m */; };
+		2CD8209E20A76574001D137F /* MoneyConfirmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8209C20A76574001D137F /* MoneyConfirmController.m */; };
+		2CD8209F20A76574001D137F /* MoneyConfirmController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD8209D20A76574001D137F /* MoneyConfirmController.xib */; };
+		2CD820A320A76587001D137F /* MoneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD820A120A76587001D137F /* MoneyController.m */; };
+		2CD820A420A76587001D137F /* MoneyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CD820A220A76587001D137F /* MoneyController.xib */; };
+		873EEA96A8C90AAC1C0633F1 /* libPods-ChainCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 375DA3A0D9218CCA4764AA02 /* libPods-ChainCar.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DED295ED9A6A9500FCF1CF2 /* Pods-ChainCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChainCar/Pods-ChainCar.release.xcconfig"; sourceTree = "<group>"; };
+		2C6B574820A6049F00786C7F /* ChainCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6B575420A6049F00786C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C6B575720A6049F00786C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C6B575920A6049F00786C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6B576720A6093200786C7F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C6B576820A6093200786C7F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C6B576920A6093200786C7F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C6B577F20A60B6900786C7F /* MainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		2C6B578020A60B6900786C7F /* MainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		2C6B578B20A6145A00786C7F /* MeSplitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeSplitController.h; sourceTree = "<group>"; };
+		2C6B578C20A6145A00786C7F /* MeSplitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeSplitController.m; sourceTree = "<group>"; };
+		2C6B578E20A614B300786C7F /* CarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarViewController.h; sourceTree = "<group>"; };
+		2C6B578F20A614B300786C7F /* CarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarViewController.m; sourceTree = "<group>"; };
+		2C6B579020A614B300786C7F /* CarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarViewController.xib; sourceTree = "<group>"; };
+		2C6B579320A6186400786C7F /* MeInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeInfoController.h; sourceTree = "<group>"; };
+		2C6B579420A6186400786C7F /* MeInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeInfoController.m; sourceTree = "<group>"; };
+		2C6B579820A61D3500786C7F /* DetailInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailInfoController.h; sourceTree = "<group>"; };
+		2C6B579920A61D3500786C7F /* DetailInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailInfoController.m; sourceTree = "<group>"; };
+		2C6B579A20A61D3500786C7F /* DetailInfoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailInfoController.xib; sourceTree = "<group>"; };
+		2CD8205020A693E7001D137F /* MeMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeMainCell.h; sourceTree = "<group>"; };
+		2CD8205120A693E7001D137F /* MeMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeMainCell.m; sourceTree = "<group>"; };
+		2CD8205220A693E7001D137F /* MeMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeMainCell.xib; sourceTree = "<group>"; };
+		2CD8205520A695A3001D137F /* MeCarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeCarCell.h; sourceTree = "<group>"; };
+		2CD8205620A695A3001D137F /* MeCarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeCarCell.m; sourceTree = "<group>"; };
+		2CD8205720A695A3001D137F /* MeCarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeCarCell.xib; sourceTree = "<group>"; };
+		2CD8205A20A6A619001D137F /* Modals.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Modals.scnassets; sourceTree = "<group>"; };
+		2CD8206020A6D367001D137F /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		2CD8206120A6D367001D137F /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		2CD8206420A6D7E3001D137F /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		2CD8206520A6D7E3001D137F /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		2CD8206720A70054001D137F /* ChargeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargeController.h; sourceTree = "<group>"; };
+		2CD8206820A70054001D137F /* ChargeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeController.m; sourceTree = "<group>"; };
+		2CD8206920A70054001D137F /* ChargeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChargeController.xib; sourceTree = "<group>"; };
+		2CD8209320A7598F001D137F /* SimpleCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleCar.h; sourceTree = "<group>"; };
+		2CD8209420A7598F001D137F /* SimpleCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCar.m; sourceTree = "<group>"; };
+		2CD8209B20A76574001D137F /* MoneyConfirmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyConfirmController.h; sourceTree = "<group>"; };
+		2CD8209C20A76574001D137F /* MoneyConfirmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyConfirmController.m; sourceTree = "<group>"; };
+		2CD8209D20A76574001D137F /* MoneyConfirmController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyConfirmController.xib; sourceTree = "<group>"; };
+		2CD820A020A76587001D137F /* MoneyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyController.h; sourceTree = "<group>"; };
+		2CD820A120A76587001D137F /* MoneyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyController.m; sourceTree = "<group>"; };
+		2CD820A220A76587001D137F /* MoneyController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoneyController.xib; sourceTree = "<group>"; };
+		375DA3A0D9218CCA4764AA02 /* libPods-ChainCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChainCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B85140EC970DE9580E21E5A /* Pods-ChainCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChainCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChainCar/Pods-ChainCar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C6B574520A6049F00786C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				873EEA96A8C90AAC1C0633F1 /* libPods-ChainCar.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		110594F309A649D6FCE7983D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B85140EC970DE9580E21E5A /* Pods-ChainCar.debug.xcconfig */,
+				1DED295ED9A6A9500FCF1CF2 /* Pods-ChainCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27FB89BABBD07BC3545EE417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375DA3A0D9218CCA4764AA02 /* libPods-ChainCar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C6B573F20A6049F00786C7F = {
+			isa = PBXGroup;
+			children = (
+				2C6B574A20A6049F00786C7F /* ChainCar */,
+				2C6B574920A6049F00786C7F /* Products */,
+				110594F309A649D6FCE7983D /* Pods */,
+				27FB89BABBD07BC3545EE417 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C6B574920A6049F00786C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B574820A6049F00786C7F /* ChainCar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C6B574A20A6049F00786C7F /* ChainCar */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B576120A6093200786C7F /* Classes */,
+				2C6B575420A6049F00786C7F /* Assets.xcassets */,
+				2CD8205A20A6A619001D137F /* Modals.scnassets */,
+				2C6B575620A6049F00786C7F /* LaunchScreen.storyboard */,
+				2C6B575920A6049F00786C7F /* Info.plist */,
+			);
+			path = ChainCar;
+			sourceTree = "<group>";
+		};
+		2C6B576120A6093200786C7F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B576E20A6093200786C7F /* MainTab */,
+				2C6B576220A6093200786C7F /* Car */,
+				2C6B576A20A6093200786C7F /* Me */,
+				2CD8206320A6D786001D137F /* Singleton */,
+				2C6B576620A6093200786C7F /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2C6B576220A6093200786C7F /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B578220A60BB700786C7F /* Controller */,
+				2C6B576420A6093200786C7F /* View */,
+				2C6B576520A6093200786C7F /* Modal */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
+		2C6B576420A6093200786C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6B576520A6093200786C7F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2C6B576620A6093200786C7F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B576720A6093200786C7F /* AppDelegate.h */,
+				2C6B576920A6093200786C7F /* AppDelegate.m */,
+				2C6B576820A6093200786C7F /* main.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2C6B576A20A6093200786C7F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B576B20A6093200786C7F /* Controller */,
+				2C6B576C20A6093200786C7F /* View */,
+				2C6B576D20A6093200786C7F /* Modal */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		2C6B576B20A6093200786C7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B578B20A6145A00786C7F /* MeSplitController.h */,
+				2C6B578C20A6145A00786C7F /* MeSplitController.m */,
+				2C6B579320A6186400786C7F /* MeInfoController.h */,
+				2C6B579420A6186400786C7F /* MeInfoController.m */,
+				2C6B579820A61D3500786C7F /* DetailInfoController.h */,
+				2C6B579920A61D3500786C7F /* DetailInfoController.m */,
+				2C6B579A20A61D3500786C7F /* DetailInfoController.xib */,
+				2CD8206720A70054001D137F /* ChargeController.h */,
+				2CD8206820A70054001D137F /* ChargeController.m */,
+				2CD8206920A70054001D137F /* ChargeController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C6B576C20A6093200786C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CD8205020A693E7001D137F /* MeMainCell.h */,
+				2CD8205120A693E7001D137F /* MeMainCell.m */,
+				2CD8205220A693E7001D137F /* MeMainCell.xib */,
+				2CD8205520A695A3001D137F /* MeCarCell.h */,
+				2CD8205620A695A3001D137F /* MeCarCell.m */,
+				2CD8205720A695A3001D137F /* MeCarCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6B576D20A6093200786C7F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				2CD8206020A6D367001D137F /* Car.h */,
+				2CD8206120A6D367001D137F /* Car.m */,
+				2CD8209320A7598F001D137F /* SimpleCar.h */,
+				2CD8209420A7598F001D137F /* SimpleCar.m */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2C6B576E20A6093200786C7F /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B577E20A60B3200786C7F /* Controller */,
+				2C6B577020A6093200786C7F /* View */,
+				2C6B577120A6093200786C7F /* Modal */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		2C6B577020A6093200786C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C6B577120A6093200786C7F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		2C6B577E20A60B3200786C7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B577F20A60B6900786C7F /* MainTabBarController.h */,
+				2C6B578020A60B6900786C7F /* MainTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C6B578220A60BB700786C7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B578E20A614B300786C7F /* CarViewController.h */,
+				2C6B578F20A614B300786C7F /* CarViewController.m */,
+				2C6B579020A614B300786C7F /* CarViewController.xib */,
+				2CD8209B20A76574001D137F /* MoneyConfirmController.h */,
+				2CD8209C20A76574001D137F /* MoneyConfirmController.m */,
+				2CD8209D20A76574001D137F /* MoneyConfirmController.xib */,
+				2CD820A020A76587001D137F /* MoneyController.h */,
+				2CD820A120A76587001D137F /* MoneyController.m */,
+				2CD820A220A76587001D137F /* MoneyController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CD8206320A6D786001D137F /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				2CD8206420A6D7E3001D137F /* Manager.h */,
+				2CD8206520A6D7E3001D137F /* Manager.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C6B574720A6049F00786C7F /* ChainCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6B575E20A6049F00786C7F /* Build configuration list for PBXNativeTarget "ChainCar" */;
+			buildPhases = (
+				59C9654E3E54A9E2C0380A9C /* [CP] Check Pods Manifest.lock */,
+				2C6B574420A6049F00786C7F /* Sources */,
+				2C6B574520A6049F00786C7F /* Frameworks */,
+				2C6B574620A6049F00786C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChainCar;
+			productName = ChainCar;
+			productReference = 2C6B574820A6049F00786C7F /* ChainCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C6B574020A6049F00786C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Mai;
+				TargetAttributes = {
+					2C6B574720A6049F00786C7F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C6B574320A6049F00786C7F /* Build configuration list for PBXProject "ChainCar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C6B573F20A6049F00786C7F;
+			productRefGroup = 2C6B574920A6049F00786C7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C6B574720A6049F00786C7F /* ChainCar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C6B574620A6049F00786C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD8205420A693E7001D137F /* MeMainCell.xib in Resources */,
+				2C6B579C20A61D3500786C7F /* DetailInfoController.xib in Resources */,
+				2CD820A420A76587001D137F /* MoneyController.xib in Resources */,
+				2CD8205920A695A3001D137F /* MeCarCell.xib in Resources */,
+				2CD8206B20A70054001D137F /* ChargeController.xib in Resources */,
+				2C6B575820A6049F00786C7F /* LaunchScreen.storyboard in Resources */,
+				2CD8205B20A6A619001D137F /* Modals.scnassets in Resources */,
+				2CD8209F20A76574001D137F /* MoneyConfirmController.xib in Resources */,
+				2C6B579220A614B300786C7F /* CarViewController.xib in Resources */,
+				2C6B575520A6049F00786C7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59C9654E3E54A9E2C0380A9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChainCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C6B574420A6049F00786C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD8206220A6D367001D137F /* Car.m in Sources */,
+				2C6B579B20A61D3500786C7F /* DetailInfoController.m in Sources */,
+				2C6B577320A6093200786C7F /* AppDelegate.m in Sources */,
+				2CD8206A20A70054001D137F /* ChargeController.m in Sources */,
+				2C6B579120A614B300786C7F /* CarViewController.m in Sources */,
+				2CD820A320A76587001D137F /* MoneyController.m in Sources */,
+				2CD8209E20A76574001D137F /* MoneyConfirmController.m in Sources */,
+				2C6B577220A6093200786C7F /* main.m in Sources */,
+				2C6B578D20A6145A00786C7F /* MeSplitController.m in Sources */,
+				2C6B578120A60B6900786C7F /* MainTabBarController.m in Sources */,
+				2CD8205320A693E7001D137F /* MeMainCell.m in Sources */,
+				2CD8205820A695A3001D137F /* MeCarCell.m in Sources */,
+				2CD8209520A7598F001D137F /* SimpleCar.m in Sources */,
+				2CD8206620A6D7E3001D137F /* Manager.m in Sources */,
+				2C6B579520A6186400786C7F /* MeInfoController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C6B575620A6049F00786C7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6B575720A6049F00786C7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C6B575C20A6049F00786C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2C6B575D20A6049F00786C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C6B575F20A6049F00786C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B85140EC970DE9580E21E5A /* Pods-ChainCar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EALZ7245Y;
+				INFOPLIST_FILE = ChainCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YuXiangMai.ChainCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChainCar/Classes/Me/Modal/ChainCar-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C6B576020A6049F00786C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DED295ED9A6A9500FCF1CF2 /* Pods-ChainCar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EALZ7245Y;
+				INFOPLIST_FILE = ChainCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YuXiangMai.ChainCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChainCar/Classes/Me/Modal/ChainCar-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C6B574320A6049F00786C7F /* Build configuration list for PBXProject "ChainCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6B575C20A6049F00786C7F /* Debug */,
+				2C6B575D20A6049F00786C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6B575E20A6049F00786C7F /* Build configuration list for PBXNativeTarget "ChainCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6B575F20A6049F00786C7F /* Debug */,
+				2C6B576020A6049F00786C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C6B574020A6049F00786C7F /* Project object */;
+}

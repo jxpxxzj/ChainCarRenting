@@ -1,0 +1,62 @@
+/api/addMoney?amount=100
+{
+  “money”: 100
+}
+
+
+/api/getMoney
+{
+    “money”: 100
+}
+
+/api/rentCar?id=1&time=10
+{
+    “status”: “waiting”
+}
+
+/api/rentList
+[
+	{
+		“id”: 1,
+		“name”: “Car 1”,		
+		“status”: “waiting”,
+		”band”: “京A12345”
+	}, {
+		“id”: 2,
+		“name”: “Car 2”,
+		“status”: “renting”
+	}, {
+		“id”: 3,
+		“name”: “Car 3”,
+		“status”: “done”
+	}
+]
+
+/api/rentStatus?id=1
+{
+	“id”: 1,
+	“name”: “Car 1”,
+	“status”: “renting”,
+	“band”: “京A12345”,
+	“moneyCost”: 100,
+	“moneyLeft”: 500,
+	“moneyTotal”: 1000,
+	“moneyPre”: 1000
+	“beginTime”: “2018-5-12”
+}
+
+/api/openDoor?id=1
+{
+	“status”: “open”
+}
+
+/api/closeDoor?id=1
+{
+	“status”: “close”
+}
+
+/api/endRent?id=1
+{
+	“moneyLeft”: “100”,
+	“status”: “waiting”
+}

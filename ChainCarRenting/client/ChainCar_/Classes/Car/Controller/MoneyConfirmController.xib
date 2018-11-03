@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoneyConfirmController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="需要金额共:12000元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgw-Or-wGr">
+                    <rect key="frame" x="177" y="129" width="237" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uk7-MS-NaZ">
+                    <rect key="frame" x="150" y="176" width="240" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-xJ-MPL">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="292"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <mutableString key="text">根据《中华人民共和国合同法》等法律规定的有关规定，双方在平等的基础上经充分协商就汽车借用事宜达成如下协议，应双方共同尊守：第一条 车辆车况确认1、出借方将所借的车型为 布加迪 Prinetti &amp; Stucchi 红 ，车牌号为 京A.B7000 车辆的借用给借用方，借车时间以双方签字盖章确认为准。第二条 借用期限1、出借车方自 2018 年 5 月 12 日 14 时 起，将所借的车辆交给借用方使用，至 2018 年 5 月 15 日 14 时 收回。第三条 出借方不承担的权利和义务1、不承担出借车辆在出借期间内所发生交通事故或其他事故造成的一切后果，包括有关部门的罚款等。2、不承担出借车辆于出借期间引发的第三者责任。第四条 借用方的权利和义务1、借车期间拥有所借车车辆的使用权。2、借车期间应严格遵守国家各项法律法规，并承担由于违章、肇事、违法、酒驾等行为所产生的全部责任及经济损失。3、不得把所借的车辆转借给任何第三者使用，不得用借用车辆进行盈利性经营，以及参加竞赛、测试、实验、教练等活动。4、承担车辆借用期间的油料、日常维修、保养及相应的零配件费用。在借用期间应对水箱水位、制动液、冷却液因每日检查的责任，在车辆正常使用中出现故障或异常，借用方应立即通知出借方或将车辆开至出借方指定维修厂，借用方不得自行折卸、更换原车设备及零件；因非正常使用造成的事故责任及损失费用均由借用方承担。5、如需续借车辆，须提前 24 小时到出借方办理续借手续。6、依照借车协议的规定借用方应有全权责任。第五条 车辆保险1、出借方为出借的车辆办理了车辆全险。2、应按时归还车辆验收时发现车辆有所就的划痕、刮伤、碰撞、损坏、设备折损、证件丢失等现象借用方应按实际损失交纳车损费及其他相应的费用。3、车辆在借用期间内如发生保险事故，借用方应立即通知出借方，出借方及时应协助借用方向保险公司报案及协助出借方办理此事故的相关事宜，借用方并支付因此产生的一切费用。如属于保险赔付范围的费用有保险公司承担；属于保险责任免赔或其他原因导致保险公司拒赔的损失由借用方承担。第六条 违约责任1、借用方在借用期间发生操作不当或其他外部原因引起的车辆损伤，如可办理保险索赔的，借用方应向出借方支付总维修费用（以保险公司评估为准）30%的加速折旧费和停驶损失；如属于保险责任免除范围的，由借用方承担全部的维修费用、以及加速折旧费和停驶损失。第七条 借用合同解除1、未经出借方许可借用方多用时间内，出借方有权随时随地收回车辆解除合同，并不负一切法律责任。2、在下述任何一种情况发生时，出借方有权解除合同并收回车辆，由此造成的一切法律责任和经济损失由借用方承担：（1）借用方利用所借车辆从事违法犯罪活动等。（2）借用方将所借用车辆转让、转租、出售、抵押、质押等。（3）从事其他有损出借方车辆合法权益的活动。第八条 合同的效力本合同自出借方、借用方签字后生效。本合同一式两份，由出借方、借用方各执一份，具有同等法律效力。同意并签名</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJX-Dj-cJk">
+                    <rect key="frame" x="237" y="511" width="31" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="moneyConfirmPress:" destination="-1" eventType="touchUpInside" id="UiS-eE-4wf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33" y="53"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+POST /api/getMoney
+Request:
+{
+    "address": "2a8973d3f03"   
+}
+Response:
+{
+    "money": 100
+}
+
+POST /api/addMoney
+Request:
+{
+    "address": "2a8973d3f03",
+    "amount": 100
+}
+Response:
+{
+    "txId": '1234567890abcde",
+    "money": 100
+}
+
+POST /api/rentStatus
+Request:
+{
+    "cid": "car_id"
+}
+Response:
+{
+    "cid": 1,
+    "name": "Car 1",
+    "band": "...",
+    "moneyCost": 100,
+    "moneyPre": 100,
+    "state": "renting",
+    "moneyTotal": 1000,
+    "beginTime": "2018-05-12T07:54:14.025Z"
+}
+
+GET /api/openDoor
+Request: empty
+Response: "opened"
+
+GET /api/closeDoor
+Request: empty
+Response: "closed"
